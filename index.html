@@ -8,16 +8,25 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://images.unsplash.com/photo-1504467046788-72fdbf26f37b') no-repeat center center fixed;
-      background-size: cover;
       color: #fff;
       text-align: center;
       padding-top: 120px;
-      backdrop-filter: blur(3px);
+      background: url('https://images.unsplash.com/photo-1562599936-6d7b5dbb4c82?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
     }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+    }
+
     h1 {
       font-size: 3em;
     }
+
     .profile-pic {
       width: 100px;
       height: 100px;
@@ -27,7 +36,9 @@
       top: 20px;
       left: 20px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      z-index: 999;
     }
+
     .banner {
       background-color: rgba(255, 193, 7, 0.9);
       display: inline-block;
@@ -36,6 +47,7 @@
       font-weight: bold;
       margin-top: 10px;
     }
+
     .contact-box {
       background-color: rgba(0, 0, 0, 0.6);
       padding: 20px;
@@ -43,6 +55,7 @@
       width: 300px;
       border-radius: 15px;
     }
+
     .floating-button {
       position: fixed;
       bottom: 30px;
@@ -55,24 +68,31 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       text-decoration: none;
       transition: background 0.3s;
+      z-index: 999;
     }
+
     .floating-button:hover {
       background-color: #00a173;
     }
+
     a {
       color: #00fdd9;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       margin-top: 40px;
       font-size: 0.9em;
     }
+
     .qr-section {
-      margin-top: 20px;
+      margin-top: 30px;
     }
+
     .qr-section img {
       width: 140px;
       border: 3px solid white;
@@ -83,6 +103,10 @@
 </head>
 <body>
 
+  <!-- Overlay to darken the background slightly -->
+  <div class="overlay"></div>
+
+  <!-- Fixed Profile Picture -->
   <img src="shravaniphoto_fixed.png" alt="Shravani Ghadge" class="profile-pic"/>
 
   <h1>🌱 Welcome to AgriBot</h1>
@@ -90,6 +114,7 @@
 
   <div class="banner">🚀 Coming Soon: Smart Web Bot with Python + OpenAI</div>
 
+  <!-- Contact Section -->
   <div class="contact-box">
     <h3>📬 Contact Me</h3>
     <p>Email: <a href="mailto:shravanighadge18@gmail.com">shravanighadge18@gmail.com</a></p>
@@ -101,16 +126,17 @@
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://t.me/AgriBotShravani_bot" alt="Telegram Bot QR Code" />
   </div>
 
+  <!-- Footer -->
   <footer>
     Created by Shravani Ghadge | B.Tech CSE @ D. Y. Patil International University, 2025
   </footer>
 
+  <!-- Telegram Button -->
   <a href="https://t.me/AgriBotShravani_bot" class="floating-button" target="_blank">💬 Talk to AgriBot</a>
 
 </body>
 </html>
 
-     
 
 
 
