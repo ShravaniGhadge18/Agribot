@@ -3,88 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AgriBot | By Shravani Ghadge</title>
+  <title>AgriBot – Your Farming Assistant</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: url('https://images.unsplash.com/photo-1589308078050-aa3fb62a1bfb?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1504467046788-72fdbf26f37b') no-repeat center center fixed;
       background-size: cover;
-      color: white;
+      color: #fff;
       text-align: center;
+      padding-top: 120px;
+      backdrop-filter: blur(3px);
     }
-    header {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
+    h1 {
+      font-size: 3em;
     }
-    .profile-img {
-      width: 140px;
-      height: 140px;
+    .profile-pic {
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       border: 3px solid #fff;
-      margin-top: 15px;
-    }
-    h1, h2 {
-      margin: 10px;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     }
     .banner {
-      background-color: #ffce00;
-      color: black;
-      font-weight: bold;
-      padding: 10px;
-      margin: 20px auto;
-      width: fit-content;
-      border-radius: 8px;
-    }
-    .telegram-btn {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      background-color: #0088cc;
-      padding: 15px 20px;
-      color: white;
-      font-size: 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
-    }
-    .contact {
-      background-color: rgba(0, 0, 0, 0.6);
-      margin: 30px auto;
-      padding: 20px;
-      width: 80%;
+      background-color: rgba(255, 193, 7, 0.9);
+      display: inline-block;
+      padding: 10px 20px;
       border-radius: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .contact-box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      margin: 30px auto;
+      width: 300px;
+      border-radius: 15px;
+    }
+    .floating-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #00c38a;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .floating-button:hover {
+      background-color: #00a173;
+    }
+    a {
+      color: #00fdd9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     footer {
-      font-size: 14px;
-      padding-bottom: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="shravaniphoto.png" alt="Shravani Ghadge" class="profile-img" />
-    <h1>AgriBot 🤖🌿</h1>
-    <h2>by Shravani Ghadge</h2>
-    <p>B.Tech CSE, D.Y. Patil International University</p>
-  </header>
 
-  <div class="banner">🚀 Coming Soon: Smart Web Bot with Python/OpenAI</div>
+  <img src="shravaniphoto_fixed.png" alt="Shravani Ghadge" class="profile-pic"/>
 
-  <div class="contact">
-    <h2>Contact</h2>
-    <p>📧 Email: shravani.ghadge@example.com</p>
-    <p>📍 Location: Pune, India</p>
+  <h1>🌱 Welcome to AgriBot</h1>
+  <p>Your smart agriculture assistant – Ask anything about crops, fertilizers, weather & more. Built to empower rural farming communities.</p>
+
+  <div class="banner">🚀 Coming Soon: Smart Web Bot with Python + OpenAI</div>
+
+  <div class="contact-box">
+    <h3>📬 Contact Me</h3>
+    <p>Email: <a href="mailto:shravanighadge18@gmail.com">shravanighadge18@gmail.com</a></p>
   </div>
 
-  <a class="telegram-btn" href="https://t.me/AgriBotShravani_bot" target="_blank">💬 Chat with AgriBot</a>
-
   <footer>
-    <p>Made with 💚 by Shravani Ghadge | 2025</p>
+    Created by Shravani Ghadge | B.Tech CSE @ D. Y. Patil International University, 2025
   </footer>
+
+  <a href="https://t.me/AgriBotShravani_bot" class="floating-button" target="_blank">💬 Talk to AgriBot</a>
+
 </body>
 </html>
+
+     
 
 
 
